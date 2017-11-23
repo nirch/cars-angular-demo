@@ -13,6 +13,9 @@ carApp.config(function($routeProvider) {
         templateUrl: "app/details/carDetails.html",
         controller: "carDetailsCtrl"        
     })
+    .when("/maintenance", {
+        templateUrl: "app/maintenance/maintenance.html"    
+    })    
 })
 
 
