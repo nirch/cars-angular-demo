@@ -1,4 +1,33 @@
+<div class="container">
 
-<h1>{{test}}</h1>
 
-<div>{{cars.length}}</div>
+
+    <h1>Car Table</h1>
+
+    Search: <input type="text" ng-model="query" /> Order By: <select ng-model="orderProp">
+                <option value="brand">Brand</option>
+                <option value="model">Model</option>
+                <option value="year">Year</option>
+              </select>
+    <table class="table">
+        <tr>
+            <th ng-click="sortBy('brand')">Brand</th>
+            <th ng-click="sortBy('model')">Model</th>
+            <th ng-click="sortBy('year')">Year</th>
+            <th ng-click="sortBy('km')">KM</th>
+            <th>Miles</th>
+            <th>KM Per Year</th>
+        </tr>
+        <tr ng-repeat="car in cars | filter : filterBrandAndModel | orderBy: orderProp : true" ng-click="selectCar(car)" ng-class="{'red-selected': car.selected}">
+            <td>{{car.brand}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.km | number}}</td>
+            <td>{{car.mile | number}}</td>
+            <td>{{car.kmPerYear() | number}}</td>
+        </tr>
+    </table>
+
+    <button type="button" class="btn btn-default" ng-click="addCar()">Add Car</button>
+
+</div>
