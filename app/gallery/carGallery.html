@@ -18,7 +18,7 @@
             <th>Miles</th>
             <th>KM Per Year</th>
         </tr>
-        <tr ng-repeat="car in cars | filter : filterBrandAndModel | orderBy: orderProp : true" ng-click="selectCar(car)" ng-class="{'red-selected': car.selected}">
+        <tr ng-repeat="car in cars | filter : filterBrandAndModel | orderBy: orderProp : true" ng-dblclick="openCar(car)" ng-class="{'red-selected': car.selected}">
             <td>{{car.brand}}</td>
             <td>{{car.model}}</td>
             <td>{{car.year}}</td>

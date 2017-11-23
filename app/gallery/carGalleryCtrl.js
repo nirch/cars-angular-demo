@@ -1,5 +1,5 @@
 
-carApp.controller("carGalleryCtrl", function($scope, cars, $log, $http) {
+carApp.controller("carGalleryCtrl", function($scope, cars, $log, $http, $location) {
     //$scope.test = "ewewew";
 
     // http call to get data from json
@@ -41,8 +41,12 @@ carApp.controller("carGalleryCtrl", function($scope, cars, $log, $http) {
         }
       }
       
-      $scope.selectCar = function (car) {
-        car.selected = !car.selected;
+      $scope.openCar = function (car) {
+        // Getting the index of the car in the array
+        var carIndex = $scope.cars.indexOf(car);
+
+        // Updating the URL
+        $location.path("/cars/" + carIndex)
       }
         
 

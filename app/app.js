@@ -9,6 +9,10 @@ carApp.config(function($routeProvider) {
         templateUrl: "app/gallery/carGallery.html",
         controller: "carGalleryCtrl"
     })
+    .when("/cars/:index", {
+        templateUrl: "app/details/carDetails.html",
+        controller: "carDetailsCtrl"        
+    })
 })
 
 
