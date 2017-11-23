@@ -5,6 +5,10 @@ carApp.config(function($routeProvider) {
     .when("/", {
         templateUrl: "app/home/home.html"
     })
+    .when("/cars", {
+        templateUrl: "app/gallery/carGallery.html",
+        controller: "carGalleryCtrl"
+    })
 })
 
 
