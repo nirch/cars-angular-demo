@@ -1,0 +1,25 @@
+[{
+    "brand": "Toyota",
+    "model": "Yaris",
+    "year": 2002,
+    "km": 500000
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "year": 2012,
+    "km": 50000
+  },
+  {
+    "brand": "Mercedes",
+    "model": "S500",
+    "year": 2017,
+    "km": 50000
+  },
+  {
+    "brand": "Subaru",
+    "model": "B4",
+    "year": 2007,
+    "km": 250000
+  }
+]

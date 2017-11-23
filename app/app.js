@@ -6,3 +6,9 @@ carApp.config(function($routeProvider) {
         templateUrl: "app/home/home.html"
     })
 })
+
+
+carApp.controller("TestCtrl", function(Car) {
+    var car = new Car("ddd", "ddaa", 2022, 232323);
+    console.log(car);
+});
