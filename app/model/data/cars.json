@@ -30,6 +30,7 @@
     "brand": "Ford",
     "model": "Fiesta",
     "year": 2005,
-    "km": 250000
+    "km": 250000,
+    "purchaseDate": "2005-05-14"
   }
 ]
