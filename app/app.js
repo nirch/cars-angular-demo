@@ -1,4 +1,4 @@
-var carApp = angular.module("carApp", ["ngRoute"]);
+var carApp = angular.module("carApp", ["ngRoute", "googlechart"]);
 
 carApp.config(function($routeProvider) {
     $routeProvider
@@ -13,8 +13,9 @@ carApp.config(function($routeProvider) {
         templateUrl: "app/details/carDetails.html",
         controller: "carDetailsCtrl"        
     })
-    .when("/maintenance", {
-        templateUrl: "app/maintenance/maintenance.html"    
+    .when("/charts", {
+        templateUrl: "app/charts/charts.html",
+        controller: "chartsCtrl"
     })    
 })
 
