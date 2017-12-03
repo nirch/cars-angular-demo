@@ -21,5 +21,11 @@
     "model": "B4",
     "year": 2007,
     "km": 250000
+  },
+  {
+    "brand": "Ford",
+    "model": "Fiesta",
+    "year": 2005,
+    "km": 250000
   }
 ]
