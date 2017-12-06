@@ -39,8 +39,8 @@ carApp.factory("cars", function (Car, $http, $q) {
     function setCars(carsPlain) {
         cars = [];
         for (var i = 0; i < carsPlain.length; i++) {
-            cars.push(new Car(carsPlain[i].brand, carsPlain[i].model,
-                carsPlain[i].year, carsPlain[i].km))
+            cars.push(new Car(carsPlain[i].brand, carsPlain[i].model, 
+                carsPlain[i].year, carsPlain[i].km, carsPlain[i].purchaseDate))
         }
     }
 

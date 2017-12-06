@@ -2,30 +2,35 @@
     "brand": "Toyota",
     "model": "Yaris",
     "year": 2002,
-    "km": 500000
+    "km": 500000,
+    "purchaseDate": "2002-09-25"
   },
   {
     "brand": "Honda",
     "model": "Civic",
     "year": 2012,
-    "km": 50000
+    "km": 50000,
+    "purchaseDate": "2012-02-03"
   },
   {
     "brand": "Mercedes",
     "model": "S500",
     "year": 2017,
-    "km": 50000
+    "km": 50000,
+    "purchaseDate": "2017-10-05"
   },
   {
     "brand": "Subaru",
     "model": "B4",
     "year": 2007,
-    "km": 250000
+    "km": 250000,
+    "purchaseDate": "2007-03-13"
   },
   {
     "brand": "Ford",
     "model": "Fiesta",
     "year": 2005,
-    "km": 250000
+    "km": 250000,
+    "purchaseDate": "2005-05-14"
   }
 ]
